@@ -5,10 +5,6 @@ body {
 	font-family: Helvetica;
 }
 
-p {
-	/*font-size: 20px;*/
-}
-
 li {
 	display: inline-block;
 	padding-left: 25px;
@@ -62,7 +58,51 @@ li {
 	width: 205px;
 }
 
+#mid h1 {
+	color: #333333;
+	font-size: 38px;
+}
+
+#mid h2 {
+	color: #333333;
+	font-size: 23px;
+}
+
+#mid h3 {
+	color: #555555;
+	font-size: 20px; 
+}
+
+#mid p {
+	color: #555555;
+}
+
+#mid {
+	height: 2000px;
+	text-align: center;
+	/*width: 1000px;*/
+}
+
+#intro {
+	line-height: 28px;
+	margin: 0 auto;
+	width: 1000px;
+}
+
+#features {
+	margin: 0 auto;
+	width: 1150px;
+}
+
 .border {
 	border: thin solid #FFFFFF;
 	margin: 0 auto;
+}
+
+.feat {
+	float: left;
+	height: 200px;
+	line-height: 28px;
+	margin-left: 30px;
+	width: 350px;
 }
