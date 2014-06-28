@@ -12,7 +12,7 @@ li {
 
 #menu {
 	background-color: #FFFFFF;
-	height: 10px;
+	height: 14px;
 	font-size: 15px;
 	padding: 18px 85px; 
 }
@@ -39,8 +39,8 @@ li {
 
 #letter {
 	border-radius: 20px;
-	font-size: 110px;
-	padding: 15px;
+	font-size: 108px;
+	padding: 16px;
 	width: 110px;
 }
 
@@ -60,7 +60,8 @@ li {
 
 #mid h1 {
 	color: #333333;
-	font-size: 38px;
+	font-size: 39px;
+	margin-bottom: 12px;
 }
 
 #mid h2 {
@@ -70,7 +71,7 @@ li {
 
 #mid h3 {
 	color: #555555;
-	font-size: 20px; 
+	font-size: 21px; 
 }
 
 #mid p {
@@ -84,9 +85,9 @@ li {
 }
 
 #intro {
-	line-height: 28px;
-	margin: 0 auto;
-	width: 1000px;
+	line-height: 29px;
+	margin: 128px auto;
+	width: 975px;
 }
 
 #features {
