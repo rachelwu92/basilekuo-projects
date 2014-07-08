@@ -84,7 +84,7 @@ a:hover {
 	color: #906C98;
 }
 
-#letter {
+.letter.border {
 	color: #FFFFFF;
 	border-radius: 20px;
 	font-size: 108px;
@@ -113,18 +113,18 @@ a:hover {
 
 #features {
 	height: 300px;
-	margin: 0 auto;
+	margin: 0 auto 30px auto;
 	width: 1170px;
 }
 
-#github {
-	margin: 50px auto;
-	width: 900px;
+#features li {
+	line-height: 25px;
+	padding-left: 27px;
+	width: 360px;
 }
 
 #get {
 	font-size: 18px;
-	margin-top: -20px;
 }
 
 #bottom {
@@ -169,13 +169,4 @@ a:hover {
 	line-height: 29px;
 	margin: 130px auto 80px auto;
 	width: 975px;
-}
-
-.feat {
-	float: left;
-	height: 210px;
-	line-height: 25px;
-	margin-left: 27px;
-	/*overflow: hidden;*/
-	width: 360px;
 }
