@@ -41,7 +41,7 @@ a:hover {
 	text-decoration: underline;
 }
 
-#menu {
+.menu {
 	color: #563D7C;
 	background-color: #FFFFFF;
 	height: 0;
@@ -123,7 +123,7 @@ a:hover {
 	width: 360px;
 }
 
-#get {
+#mid .border {
 	font-size: 18px;
 }
 
@@ -132,7 +132,8 @@ a:hover {
 	height: 800px;
 }
 
-#expo {
+#bottom li {
+	padding-left: 0;
 	margin-bottom: 80px;
 }
 
