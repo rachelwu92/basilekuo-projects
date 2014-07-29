@@ -8,25 +8,28 @@ function imageAppear(e) {
 	element = e.target;
 	console.log(element);
 
-	image = document.createElement("img");
-	image.height="175";
-	image.width="175";
+	if(element.tagName =="DIV" && element.children.length == 0) {
 
-	if (turn) {
-		//X goes first
-		image.src = "x.png";
-		turn = false;
-	}
-	else {
-		//O's turn
-		image.src = "o.png";
-		turn = true;
-	}
+		image = document.createElement("img");
+		image.height="175";
+		image.width="175";
 
-	element.appendChild(image);
-	emptySpaces--;
-	if (emptySpaces == 0) {
-	alert("This game is a draw!");
+		if (turn) {
+			//X goes first
+			image.src = "x.png";
+			turn = false;
+		}
+		else {
+			//O's turn
+			image.src = "o.png";
+			turn = true;
+		}
+
+		element.appendChild(image);
+		emptySpaces--;
+		if (emptySpaces == 0) {
+		alert("This game is a draw!");
+		}
 	}
 };
 
