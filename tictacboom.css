@@ -6,6 +6,10 @@ h1 {
 	text-align: center;
 }
 
+p {
+	display: none;
+}
+
 .container {
 	margin: 0 auto;
 	width: 600px;
