@@ -1,0 +1,39 @@
+<!-- tictacboom.html -->
+
+<!DOCTYPE hmtl>
+
+<html>
+	<head>
+		<title>Tic Tac Toe</title>
+		<link rel="stylesheet" type="text/css" href="reset.css">
+		<link rel="stylesheet" type="text/css" href="tictacboom.css">
+		<script src="tictacboom.js"></script>
+	</head>
+	<body>
+		<h1>Play Tic Tac Toe!</h1>
+		<!-- container div -->
+		<div class="container">
+			<!-- nine divs inside. each fits both an X and O image
+			to be hidden at start. Shows up on click with JS -->
+			<div class="square" onclick="imageAppear(event)">
+				<!-- <img src="x.png" height="175" width="175"> -->
+			</div>
+			<div class="square" onclick="imageAppear(event)"></div>
+			<div class="square" onclick="imageAppear(event)"></div>
+			<div class="square" onclick="imageAppear(event)"></div>
+			<div class="square" onclick="imageAppear(event)"></div>
+			<div class="square" onclick="imageAppear(event)"></div>
+			<div class="square" onclick="imageAppear(event)"></div>
+			<div class="square" onclick="imageAppear(event)"></div>
+			<div class="square" onclick="imageAppear(event)"></div>
+		</div>
+	</body>
+</html>
+
+
+<!-- This code can go 2 ways:
+	1) as written above, have two images in each of the 9 divs, both 
+		not displaying at the start. But to choose which image appears requires ids
+		and depends on who's turn it is to click.
+	2) Have nothing in the divs at the start. Onclick, an image is inserted into the 
+		div depending who's turn it is.  Maybe this can be based off toggling a boolean. -->

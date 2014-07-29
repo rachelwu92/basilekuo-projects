@@ -1,0 +1,25 @@
+/*tictacboom.css*/
+
+h1 {
+	font-size: 70px;
+	margin: 10px;
+	text-align: center;
+}
+
+.container {
+	margin: 0 auto;
+	width: 600px;
+}
+
+.square {
+	border: solid;
+	height: 175px;
+	float: left;
+	padding: 3px;
+	width: 175px;
+}
+
+.square:hover {
+	background-color: cyan;
+}
+
