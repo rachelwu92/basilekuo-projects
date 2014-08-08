@@ -52,18 +52,9 @@ function imageAppear(e) {
 
 		//check if anyone won
 		grid = document.getElementsByTagName("P");
+		
 		//there are 8 grid ways to win
 		// //0,1,2 ; 3,4,5; 6,7,8; 0,3,6; 1,4,7; 2,5,8; 0,4,8; 2,4,6
-		// if (grid[0].innerText===grid[1].innerText && grid[0].innerText===grid[2].innerText)
-		// 	alert(grid[0].innerText + " wins!");
-		// for (var i = 0; i < grid.length; i++) {
-		// 	if (grid[i] !== "") {
-				
-		// 	}
-		// };
-
-
-
 		if (checkWin(0,1,2)) {
 		}
 		else if (checkWin(3,4,5)) {
@@ -81,12 +72,10 @@ function imageAppear(e) {
 		else if (checkWin(2,4,6)) {
 		}
 		else {
-		
-		}
-
-		emptySpaces--;
-		if (emptySpaces == 0) {
-		alert("This game is a draw!");
+			emptySpaces--;
+			if (emptySpaces == 0) {
+			alert("This game is a draw!");
+			}
 		}
 	}
 };
