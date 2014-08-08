@@ -3,6 +3,22 @@
 var turn = true;
 var emptySpaces = 9;
 
+function checkWin(a, b, c) {
+	//make sure the square isn't empty first
+	if (grid[a].innerText !== "") {
+		if (grid[b].innerText !== "") {
+			if (grid[c].innerText !== "") {
+				if (grid[a].innerText===grid[b].innerText) {
+					if (grid[b].innerText===grid[c].innerText) {
+					alert(grid[a].innerText + " wins!");
+					return true;
+					}
+				}
+			}
+		}
+	}
+}
+
 function imageAppear(e) {
 
 	element = e.target;
@@ -37,7 +53,7 @@ function imageAppear(e) {
 		//check if anyone won
 		grid = document.getElementsByTagName("P");
 		//there are 8 grid ways to win
-		// //0,1,2 ; 3,4,5; 6,7,8; 0,3,6; 1,4,7; 2,5,9; 0,4,8; 2,4,6
+		// //0,1,2 ; 3,4,5; 6,7,8; 0,3,6; 1,4,7; 2,5,8; 0,4,8; 2,4,6
 		// if (grid[0].innerText===grid[1].innerText && grid[0].innerText===grid[2].innerText)
 		// 	alert(grid[0].innerText + " wins!");
 		// for (var i = 0; i < grid.length; i++) {
@@ -46,47 +62,27 @@ function imageAppear(e) {
 		// 	}
 		// };
 
-		function checkWin(a, b, c) {
-			//make sure the square isn't empty first
-			if (grid[a].innerText !== "") {
-				if (grid[b].innerText !== "") {
-					if (grid[c].innerText !== "") {
-						if (grid[a].innerText===grid[b].innerText===grid[c].innerText) {
-							alert(grid[a].innerText + " wins!");
-							return true;
-						}
-					}
-				}
-			}
-		}
 
-		// if (checkWin(0,1,2)) {
-		// 	continue;
-		// }
-		// else if (checkWin(3,4,5)) {
-		// 	continue;
-		// }
-		// else if (checkWin(6,7,8)) {
-		// 	continue;
-		// }
-		// else if (checkWin(0,3,6)) {
-		// 	continue;
-		// }
-		// else if (checkWin(1,4,7)) {
-		// 	continue;
-		// }
-		// else if (checkWin(2,5,9)) {
-		// 	continue;
-		// }
-		// else if (checkWin(0,4,8)) {
-		// 	continue;
-		// }
-		// else if (checkWin(2,4,6)) {
-		// 	continue;
-		// }
-		// else {
+
+		if (checkWin(0,1,2)) {
+		}
+		else if (checkWin(3,4,5)) {
+		}
+		else if (checkWin(6,7,8)) {
+		}
+		else if (checkWin(0,3,6)) {
+		}
+		else if (checkWin(1,4,7)) {
+		}
+		else if (checkWin(2,5,8)) {
+		}
+		else if (checkWin(0,4,8)) {
+		}
+		else if (checkWin(2,4,6)) {
+		}
+		else {
 		
-		// }
+		}
 
 		emptySpaces--;
 		if (emptySpaces == 0) {
