@@ -6,13 +6,28 @@ h1 {
 	text-align: center;
 }
 
+h2 {
+	font-size: 50px;
+	margin: 10px;
+	text-align: center;
+}
+
 p {
 	display: none;
+}
+
+button {
+	margin: 10px;
 }
 
 .container {
 	margin: 0 auto;
 	width: 600px;
+}
+
+.side {
+	position: absolute;
+	width: 320px;
 }
 
 .square {

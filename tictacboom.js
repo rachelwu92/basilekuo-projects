@@ -3,6 +3,20 @@
 var turn = true;
 var emptySpaces = 9;
 
+function reset() {
+	var images = document.getElementsByTagName("IMG");
+	var grid = document.getElementsByTagName("P");
+	var msg = document.getElementById('winMsg');
+	for (var i = 0; i < 9; i++) {
+		if (images[i] !== undefined) {
+			images[i].src = "";
+			grid[i].innerText = "";
+			turn = true;
+			msg.innerText = "Who will win?"
+		}
+	}
+}
+
 function checkWin(a, b, c) {
 	//make sure the square isn't empty first
 	if (grid[a].innerText !== "") {
@@ -10,8 +24,8 @@ function checkWin(a, b, c) {
 			if (grid[c].innerText !== "") {
 				if (grid[a].innerText===grid[b].innerText) {
 					if (grid[b].innerText===grid[c].innerText) {
-					alert(grid[a].innerText + " wins!");
-					return true;
+						document.getElementById('winMsg').innerText = grid[a].innerText + " wins!";
+						return true;
 					}
 				}
 			}
