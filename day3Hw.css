@@ -1,0 +1,19 @@
+body {
+	background: url(http://i.imgur.com/z4WUADn.jpg) no-repeat right top;
+	font-family: sans-serif;
+}
+
+li {
+	background-color: #EEE;
+}
+
+.title {
+	color: #F00;
+	font-weight: normal;
+	text-decoration: underline;
+}
+
+.listHeader {
+	color: dodgerblue;
+	font-weight: normal;
+}
